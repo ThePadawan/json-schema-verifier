@@ -6,8 +6,6 @@ install:
   - "pip install coverage"
   - "pip install codecov"
 build: off
-before_test:
-  - cmd: python main.py schema
 test_script:
   - coverage run --branch --source=validate test.py
   - codecov
