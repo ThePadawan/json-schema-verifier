@@ -1,4 +1,5 @@
 # coding=utf-8
+import sys
 import os
 from os.path import isdir, join
 import json
@@ -32,6 +33,7 @@ def inspect(filenames, do_print):
         do_print("No schema errors found ({} inspected)"
                  .format(inspected_schema_count))
 
+    return has_any_errors
 
 def main(argv, do_print):
     if len(argv) < 2:
@@ -47,4 +49,8 @@ def main(argv, do_print):
 
     schema_filenames = [join(folder_name, x) for x in os.listdir(folder_name)]
 
-    inspect(schema_filenames, do_print)
+    has_errors = inspect(schema_filenames, do_print)
+    if has_errors:
+        sys.exit(1)
+    else:
+        sys.exit(0)

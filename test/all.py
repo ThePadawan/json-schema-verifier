@@ -36,7 +36,10 @@ class AllTests(unittest.TestCase):
         inspect([], self.do_print)
 
     def testValidFolder(self):
-        main(["main.py", "test/test_schema"], self.do_print)
+        try:
+            main(["main.py", "test/test_schema"], self.do_print)
+        except SystemExit:
+            pass
 
     def do_print(self, msg):
         self.output.append(msg)
