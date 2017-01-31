@@ -35,11 +35,15 @@ class AllTests(unittest.TestCase):
     def testZeroFiles(self):
         inspect([], self.do_print)
 
-    def testValidFolder(self):
+    def testValidFolderButIncorrectSchema(self):
         try:
-            main(["main.py", "test/test_schema"], self.do_print)
+            main(["main.py", "test/test_invalid_schema"], self.do_print)
         except SystemExit:
-            pass
+            return
+        self.assertIsNotNone(None)
+
+    def testValidFolderAndCorrectSchema(self):
+        main(["main.py", "test/test_valid_schema"], self.do_print)
 
     def do_print(self, msg):
         self.output.append(msg)

@@ -52,5 +52,3 @@ def main(argv, do_print):
     has_errors = inspect(schema_filenames, do_print)
     if has_errors:
         sys.exit(1)
-    else:
-        sys.exit(0)
