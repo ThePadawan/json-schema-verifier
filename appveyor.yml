@@ -1,0 +1,13 @@
+version: 1.0.{build}
+install:
+  - SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%
+  - "pip install --disable-pip-version-check --user --upgrade pip"
+  - "pip install -r requirements.txt"
+  - "pip install coverage"
+  - "pip install codecov"
+build: off
+before_test:
+  - cmd: python main.py schema
+test_script:
+  - coverage run --branch --source=validate test.py
+  - codecov
