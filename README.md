@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/ThePadawan/apiphany-schema.svg?branch=master)](https://travis-ci.org/ThePadawan/apiphany-schema)
-[![Build status](https://ci.appveyor.com/api/projects/status/qlpr31qplbaboer6/branch/master?svg=true)](https://ci.appveyor.com/project/ThePadawan/apiphany-schema/branch/master)
-[![Code Health](https://landscape.io/github/ThePadawan/apiphany-schema/master/landscape.svg?style=flat)](https://landscape.io/github/ThePadawan/apiphany-schema/master)
-[![codecov](https://codecov.io/gh/ThePadawan/apiphany-schema/branch/master/graph/badge.svg)](https://codecov.io/gh/ThePadawan/apiphany-schema)
+[![Build Status](https://travis-ci.org/ThePadawan/json-schema-verifier.svg?branch=master)](https://travis-ci.org/ThePadawan/json-schema-verifier)
+[![Build status](https://ci.appveyor.com/api/projects/status/2oxu4f8t9kl4ol2i?svg=true)](https://ci.appveyor.com/project/ThePadawan/json-schema-verifier)
+[![Code Health](https://landscape.io/github/ThePadawan/json-schema-verifier/master/landscape.svg?style=flat)](https://landscape.io/github/ThePadawan/json-schema-verifier/master)
+[![codecov](https://codecov.io/gh/ThePadawan/json-schema-verifier/branch/master/graph/badge.svg)](https://codecov.io/gh/ThePadawan/json-schema-verifier)
 
 
-# apiphany-schema
-JSON schemas for [apiphany](https://github.com/ThePadawan/apiphany), and a small python tool to verify them against the metaschema.
+# json-schema-verifier
+A small python tool to verify a folder of json schme files against the metaschema.
