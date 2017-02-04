@@ -35,6 +35,7 @@ def inspect(filenames, do_print):
 
     return has_any_errors
 
+
 def main(argv, do_print):
     if len(argv) < 2:
         do_print("Please specify a folder to validate.")
